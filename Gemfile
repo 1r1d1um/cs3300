@@ -74,3 +74,5 @@ group :development, :test do
 end
 
 gem 'simplecov', require: false
+
+gem 'devise'
