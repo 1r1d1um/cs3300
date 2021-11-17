@@ -1,6 +1,9 @@
 require "rails_helper"
 
 RSpec.describe ProjectsController, type: :controller do
+  
+  login_user
+  
   context "GET #index" do
     it "returns a success response" do
       get :index
@@ -16,4 +19,5 @@ RSpec.describe ProjectsController, type: :controller do
       expect(response).to be_success
     end
   end
+  
 end
