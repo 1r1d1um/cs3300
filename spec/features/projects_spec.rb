@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'devise.rb'
 
 def new_user
   user = FactoryBot.create(:user)

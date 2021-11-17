@@ -1,5 +1,3 @@
-require "rails_helper"
-
 module ControllerMacros
     def login_user
       # Before each test, create and login the user

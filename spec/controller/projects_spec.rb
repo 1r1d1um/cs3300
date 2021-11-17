@@ -1,5 +1,4 @@
 require "rails_helper"
-require 'devise.rb'
 
 RSpec.describe ProjectsController, type: :controller do
   
