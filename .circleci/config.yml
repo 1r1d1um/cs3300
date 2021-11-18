@@ -30,3 +30,7 @@ workflows:
       - deploy:
           requires:
             - build
+
+machine:
+  environment:
+    DBUS_SESSION_BUS_ADDRESS: /dev/null
