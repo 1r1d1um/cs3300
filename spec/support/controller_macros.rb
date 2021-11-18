@@ -1,3 +1,5 @@
+require 'factory_bot_rails'
+
 module ControllerMacros
     def login_user
       # Before each test, create and login the user
