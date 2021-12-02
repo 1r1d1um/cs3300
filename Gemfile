@@ -79,3 +79,5 @@ gem 'simplecov', require: false
 gem 'devise'
 
 gem 'factory_bot_rails'
+
+gem 'bootstrap', '~> 4.6.1'
