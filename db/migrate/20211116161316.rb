@@ -42,3 +42,14 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
     # add_index :users, :unlock_token,         unique: true
   end
 end
+
+class CreateProjects < ActiveRecord::Migration[5.2]
+  def change
+    create_table :projects do |t|
+      t.string :title
+      t.text :description
+      t.text :description2
+      t.timestamps
+    end
+  end
+end
