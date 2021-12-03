@@ -20,6 +20,7 @@ RSpec.describe Project, type: :model do
   end
 
   context "scopes tests" do
+    
 
   end
 end

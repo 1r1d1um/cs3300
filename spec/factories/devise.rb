@@ -1,8 +1,8 @@
 FactoryBot.define do
     factory :user do
-      id {3}
-      email {"test2@user.com"}
-      password {"qwerty1"}
+      id {1}
+      email {"tester5@user.com"}
+      password {"qwerty123"}
       # Add additional fields as required via your User model
     end
   

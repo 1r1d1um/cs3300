@@ -15,17 +15,31 @@
 <br>
 <br>
 
+<div class="jumbotron"  style="text-align:center;">
+  <div class="container">
+
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @project.title %>
+<h2><%= @project.title %></h2>
 </p>
 
 <p>
-  <strong>Description:</strong>
   <%= @project.description %>
 </p>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<% if user_signed_in? %>
+  <td><%= button_to 'Edit', edit_project_path(@project), method: :get, :class => "btn-primary btn-small" %></td>
+<% end %>
+
+<td><%= button_to 'Back', projects_path, method: :get, :class => "btn-primary btn-small" %></td>
+
+  </div>
+</div>
+
+
+<br>
+
+<footer class="container text-center">
+  <b>Contact Information</b><p>Anthony Mitchell<br>719-375-5871<br>amitche3@uccs.edu</p>
+</footer>
