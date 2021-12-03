@@ -29,7 +29,7 @@
       <% @projects.each do |project| %>
         <div class="col-md-4">
           <h2><%= project.title %></h2>
-          
+          <p><%= project.titledescription %></p>
           <td><%= button_to 'Show More »', project, method: :get, :class => "btn-primary btn-small" %></td>
           <% if user_signed_in? %>
             <td><%= button_to 'Delete »', project, method: :delete, :class => "btn-primary btn-small", data: { confirm: 'Are you sure?' } %></td>
